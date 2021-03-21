@@ -13,5 +13,5 @@ interface IAccount extends Document {
   email   : string;
   password: string;
 }
--
+
 export default model<IAccount>('Account', schema);
