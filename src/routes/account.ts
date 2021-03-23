@@ -8,9 +8,10 @@ router.route('/accounts')
   .get(getAccounts)
   .post(setAccount)
 
-router.route('/accounts/:id')
+router.route('/accounts/:rut')
   .get(getAccount)
-  .delete(deleteAccount)
+
+router.route('/accounts/update/:id')
   .put(updateAccount)
 
 export default router;

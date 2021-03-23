@@ -4,7 +4,8 @@ const schema = new Schema({
   name    : String,
   rut     : String,
   email   : String,
-  password: String
+  password: String,
+  balance : Number
 });
 
 interface IAccount extends Document {
@@ -12,6 +13,7 @@ interface IAccount extends Document {
   rut     : string;
   email   : string;
   password: string;
+  balance : number;
 }
 
 export default model<IAccount>('Account', schema);
